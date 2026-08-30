@@ -884,24 +884,22 @@ ar: {
 }
 };
 
-const LANG_NAMES = {
-  "en": "English",
-  "zh-Hant": "繁體中文",
-  "zh-Hans": "简体中文",
-  "ja": "日本語",
-  "ko": "한국어",
-  "de": "Deutsch",
-  "fr": "Français",
-  "es": "Español",
-  "pt-BR": "Português (Brasil)",
-  "it": "Italiano",
-  "ru": "Русский",
-  "ar": "العربية"
-};
-const RTL_LANGS = ["ar"];
+Object.keys(SITE_I18N).forEach(function (locale) {
+  const legacy = I18N[locale] || I18N[locale.split("-")[0]] || I18N.en;
+  I18N[locale] = Object.assign({}, legacy, SITE_I18N[locale]);
+});
+const LANG_NAMES = SITE_LANGUAGE_NAMES;
+const RTL_LANGS = ["ar-SA", "he", "ur-PK"];
 const LS_KEY = "gbago-lang";
 
 function detectLang() {
+  const requested = new URLSearchParams(window.location.search).get("lang");
+  if (requested) {
+    const exact = Object.keys(I18N).find(function (locale) {
+      return locale.toLowerCase() === requested.toLowerCase();
+    });
+    if (exact) return exact;
+  }
   try {
     const saved = localStorage.getItem(LS_KEY);
     if (saved && I18N[saved]) return saved;
@@ -914,16 +912,32 @@ function detectLang() {
       if (lower.includes("hans") || lower.includes("-cn") || lower.includes("-sg") || lower.includes("-my")) return "zh-Hans";
       return "zh-Hant";
     }
+    const exact = Object.keys(I18N).find(function (locale) {
+      return locale.toLowerCase() === lower;
+    });
+    if (exact) return exact;
+    if (lower.startsWith("pt-pt")) return "pt-PT";
     if (lower.startsWith("pt")) return "pt-BR";
+    if (lower.startsWith("en-au")) return "en-AU";
+    if (lower.startsWith("en-ca")) return "en-CA";
+    if (lower.startsWith("en-gb")) return "en-GB";
+    if (lower.startsWith("en")) return "en-US";
+    if (lower.startsWith("es-mx")) return "es-MX";
+    if (lower.startsWith("es")) return "es-ES";
+    if (lower.startsWith("fr-ca")) return "fr-CA";
+    if (lower.startsWith("fr")) return "fr-FR";
     const two = lower.slice(0, 2);
-    if (I18N[two]) return two;
+    const base = Object.keys(SITE_I18N).find(function (locale) {
+      return locale.toLowerCase().split("-")[0] === two;
+    });
+    if (base) return base;
   }
-  return "en";
+  return "en-US";
 }
 
 function applyLang(lang) {
-  if (!I18N[lang]) lang = "en";
-  const dict = I18N[lang], en = I18N.en;
+  if (!SITE_I18N[lang]) lang = "en-US";
+  const dict = I18N[lang], en = I18N["en-US"];
   document.querySelectorAll("[data-i18n]").forEach(function (el) {
     const key = el.getAttribute("data-i18n");
     const val = dict[key] !== undefined ? dict[key] : en[key];
