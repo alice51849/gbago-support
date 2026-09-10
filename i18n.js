@@ -1,6 +1,6 @@
 /* GBAGo support site i18n — no external dependencies.
-   Languages: en, zh-Hant, zh-Hans, ja, ko, de, fr, es, pt-BR, it, ru, ar.
-   Any missing key falls back to English, so new languages can be added partially. */
+   Support and privacy use the exact-50 SITE_I18N payload. Legacy terms strings
+   remain as fallbacks until the terms page receives its own exact-50 payload. */
 "use strict";
 
 const MGBA_LINK = '<a href="https://github.com/mgba-emu/mgba" rel="noopener">mGBA</a>';

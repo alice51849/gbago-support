@@ -120,6 +120,23 @@ details summary::before{
 details[open] summary::before{content:"−"}
 details .a{padding:0 1.1rem 1rem;color:var(--ink)}
 details .a p{margin-bottom:.5rem}
+.no-js-fallback{
+  margin-top:1.2rem;padding:1.6rem 1.7rem;
+  background:linear-gradient(145deg,#fff 0%,#FCF9FF 55%,#EEF4FF 100%);
+  border:1px solid var(--line);border-radius:20px;
+  box-shadow:0 10px 30px -18px rgba(137,128,247,.35);
+}
+.no-js-fallback>h1{font-size:1.45rem;margin-bottom:.35rem}
+.no-js-fallback>p{color:var(--muted);margin-bottom:1rem}
+.no-js-fallback details{padding:0}
+.no-js-fallback details>h2,
+.no-js-fallback details>h3,
+.no-js-fallback details>p{margin-inline:1.1rem}
+.no-js-fallback details>h2{font-size:1.18rem;margin-top:1rem}
+.no-js-fallback details>h3{font-size:1rem;color:var(--aurora-3);margin-top:.9rem}
+.no-js-fallback details>p{margin-top:.35rem}
+.no-js-fallback details>p:last-child{margin-bottom:1rem}
+.no-js-fallback details[dir="rtl"]{text-align:right}
 
 footer{
   border-top:1px solid var(--line);padding:1.6rem 1.4rem 2.4rem;
@@ -131,6 +148,7 @@ footer p{max-width:760px;margin:.35rem auto}
 
 @media (max-width:560px){
   .card{padding:1.2rem 1.1rem;border-radius:16px}
+  .no-js-fallback{padding:1.2rem 1.1rem;border-radius:16px}
   .nav{padding:.9rem 1rem}
   main{padding:1.6rem 1rem 2.4rem}
 }
