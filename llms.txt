@@ -1,0 +1,20 @@
+# GBAGo: Visual Saves support
+
+> Official support pages for GBAGo, a retro handheld emulator for iPhone and iPad by Lumi Studio. GBAGo contains no games.
+
+- App Store: https://apps.apple.com/app/id6804564400
+- Google Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo
+
+## Pages
+
+- [Support home](https://open.cait518.cc/gbago-support/)
+- [Privacy policy](https://open.cait518.cc/gbago-support/privacy.html)
+- [Terms of use](https://open.cait518.cc/gbago-support/terms.html)
+- [About GBAGo fact sheet (de-DE)](https://open.cait518.cc/gbago-support/about-gbago-app.de-DE.html)
+- [About GBAGo fact sheet (es-MX)](https://open.cait518.cc/gbago-support/about-gbago-app.es-MX.html)
+- [About GBAGo fact sheet (fr-FR)](https://open.cait518.cc/gbago-support/about-gbago-app.fr-FR.html)
+- [About GBAGo fact sheet (en)](https://open.cait518.cc/gbago-support/about-gbago-app.html)
+- [About GBAGo fact sheet (ja)](https://open.cait518.cc/gbago-support/about-gbago-app.ja.html)
+- [About GBAGo fact sheet (ko)](https://open.cait518.cc/gbago-support/about-gbago-app.ko.html)
+- [About GBAGo fact sheet (pt-BR)](https://open.cait518.cc/gbago-support/about-gbago-app.pt-BR.html)
+- [About GBAGo fact sheet (zh-Hant)](https://open.cait518.cc/gbago-support/about-gbago-app.zh-Hant.html)
