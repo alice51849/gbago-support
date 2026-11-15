@@ -18,3 +18,6 @@
 - [About GBAGo fact sheet (ko)](https://open.cait518.cc/gbago-support/about-gbago-app.ko.html)
 - [About GBAGo fact sheet (pt-BR)](https://open.cait518.cc/gbago-support/about-gbago-app.pt-BR.html)
 - [About GBAGo fact sheet (zh-Hant)](https://open.cait518.cc/gbago-support/about-gbago-app.zh-Hant.html)
+- [About GBAGo fact sheet (th)](https://open.cait518.cc/gbago-support/about-gbago-app.th.html)
+- [About GBAGo fact sheet (id)](https://open.cait518.cc/gbago-support/about-gbago-app.id.html)
+- [About GBAGo fact sheet (vi)](https://open.cait518.cc/gbago-support/about-gbago-app.vi.html)
