@@ -1,0 +1,32 @@
+# GBAGo: Visual Saves support
+
+> Official support, help and privacy pages for GBAGo: Visual Saves, an iOS and Android game emulator app by Lumi Studio.
+
+- App Store: https://apps.apple.com/app/id6804564400
+- Google Play: https://play.google.com/store/apps/details?id=com.alice51849.GBAGo
+- Platform: iOS (iPhone, iPad), Android
+- Pricing: paid download (pay once); no ads, no account, no tracking
+- Content: except for three original demo cartridges made by Lumi Studio, GBAGo includes no games and does not provide or link to game files. Import only files you created yourself or are authorized to use under applicable law.
+- Developer: Lumi Studio
+
+## Pages
+
+- [Support home (50 languages)](https://open.cait518.cc/gbago-support/)
+- [Privacy policy](https://open.cait518.cc/gbago-support/privacy.html)
+- [Terms of use](https://open.cait518.cc/gbago-support/terms.html)
+
+## Fact sheets (what it is, who it is for, pricing, what is different)
+
+- [GBAGo (日本語)](https://open.cait518.cc/gbago-support/about-gbago.ja.html)
+- [GBAGo (Italiano)](https://open.cait518.cc/gbago-support/about-gbago.it.html)
+- [GBAGo (Bahasa Indonesia)](https://open.cait518.cc/gbago-support/about-gbago.id.html)
+- [GBAGo (Tiếng Việt)](https://open.cait518.cc/gbago-support/about-gbago.vi.html)
+- [GBAGo (Türkçe)](https://open.cait518.cc/gbago-support/about-gbago.tr.html)
+
+## Save and recovery Q&A
+
+- [save-lost-recovery.zh-Hant.html](https://open.cait518.cc/gbago-support/save-lost-recovery.zh-Hant.html)
+- [save-protect-qa.ja.html](https://open.cait518.cc/gbago-support/save-protect-qa.ja.html)
+- [save-protect-qa.ko.html](https://open.cait518.cc/gbago-support/save-protect-qa.ko.html)
+- [save-state-instant.zh-Hant.html](https://open.cait518.cc/gbago-support/save-state-instant.zh-Hant.html)
+- [zidong-kuaizhao-save-recovery.zh-Hant.html](https://open.cait518.cc/gbago-support/zidong-kuaizhao-save-recovery.zh-Hant.html)
